@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.Pagebackground{
+  height: 400px;
+  background-blend-mode: multiply;
+  background: url('https://img.freepik.com/free-photo/gradient-navy-blue-digital-grid-wallpaper_53876-104785.jpg?t=st=1717409565~exp=1717413165~hmac=aa8bafc5cb1b64a1f610f063bea8ad44f841daea8f4139acdcc25ce83e8efb35&w=826')center center/cover no-repeat;
 }
+/* .Navcomponent{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.marquee {
+  font-size: 40px;
   color: white;
+  height: 80px;
+  background-color: rgb(63, 63, 199);
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translate(-100%, 0);
   }
 }
+
+.image-container {
+  border: 3px solid blue;
+  position: relative;
+  width: 300px;
+  height: 300px;
+
+}
+
+.firstimg{
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.imagetwo{
+  margin-bottom: -70px;
+  margin-right: -100px;
+}
+.footerPages{
+  height: 400px;
+  width:100%;
+  background-color:rgb(23, 21, 21);}
+  .ulPages{
+    list-style: none;
+    color: white;
+  }
+  .ulPages li a{
+     color: white;
+     text-decoration: none;
+  }
+  .bgPages{
+    height: 50px;
+    width: 100%;
+    background-color:  rgb(63, 63, 199);
+    color: white;
+  }
+  .slideImage{
+    height: 500px;
+    width: 100%;
+    background-image: url('https://t4.ftcdn.net/jpg/02/50/99/45/360_F_250994548_wQCr0WrSd0aA3dRs1uQDAkYYStNVSGYE.jpg');
+  }
